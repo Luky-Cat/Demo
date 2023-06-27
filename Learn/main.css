@@ -1,0 +1,27 @@
+/* "*" có nghĩa là gán thuộc tính này cho tất cả các phần tử trong html */
+/* universal selector and inherited = 0, */
+*{
+    color:black;
+
+}
+html{
+    color:rgb(63, 63, 63);
+}
+/* đạt biến trong css varible cerlobal*/
+/* :root varible cerlobal,là đặt một biến và sử dụng được nhiều thẻ */
+:root{
+    --text-color:red;
+
+}
+/* --my-color là dạng variable local,là chỉ sử dụng được trong thẻ h1 */
+h1{
+   --my-color:green;
+    color: var(--my-color);
+}
+h2{
+
+    color: var(--text-color);
+}h3{
+
+    color: var(--text-color);
+}

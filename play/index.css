@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(219, 156, 192);
+    overflow: hidden; 
+    font-family: sans-serif;
+    
+}
+.image{
+  height: 100px; 
+  width: 15000px;
+  background-color: rgb(210, 221, 174);
+  padding: 20px ;
+
+}
+.text{  
+ 
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+   color:rgb(111, 135, 224);
+}

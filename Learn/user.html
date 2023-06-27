@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <title></title>
+   <meta charset="utf-8"> 
+   <!-- độ ưu tiên  -->
+   <!-- giữa internal và external sẽ không có sự ưu tiên nào tùy vào css nào mơi hơn   -->
+   <!-- inline 1000,#id 100,.class 10,tag 1 (tùy vào số càng lớn độ ưu tiên càng cao) -->
+   <link rel="stylesheet" href="main.css">
+   <style> 
+   /* #head là #id */
+   #head-id{
+   color:rgb(227, 146, 88)
+   }
+     /*.head là .class */
+    .head-class{
+        color:rgb(247, 154, 225);
+    }
+    /* h1 là tag */
+    h1{
+        color:rgb(117, 91, 141);
+    
+    }
+ 
+   </style>
+      <style> 
+        /* #head-id-two +head-class-two=110 điểm nên đượ ưu tiên,gọi cả id và class trong một css là gọi có id và class của một pt */
+        /* nếu gọi cả hai attribute the same cùng một lúc thì sẽ ưu tiên cái nào gọi sao */
+        /* cách này là equal specificity */
+        #head-id-two.head-class-two{
+        color:rgb(104, 78, 60)
+        }
+        #head-id-two{
+        color:rgb(71, 29, 170)
+        }
+          /*.head là .class */
+         .head-class-two{
+             color:rgb(243, 104, 210);
+         }
+         /* h1 là tag */
+         h1{
+             color:rgb(117, 91, 141);
+         
+         }
+      
+        </style>
+    </head>
+    <body>
+    <!-- style là inline trong dòng  -->
+<h1  style="color:rgb(176, 170, 134)"   id="head-id" class="head-class">HEHE</h1>
+<h2  id="head-id-two" class="head-class-two">HEHE</h2>
+<h3>HEHE</h3>
+    </body>
+</html>
